@@ -1,0 +1,16 @@
+Student Information:
+Xianzheng Fang
+0847616
+
+Program description
+Using the LinkedList to build a queue, use the concept of priority Queue
+to stimulate the hospital queue
+
+Additional program detail:
+
+1. use double link list and use the concept of queue.
+2. It support both read data from file and input data by user.
+3. There are 3 line of data from file initialy.
+4. The data type is char * int and char *, seperate by space.
+5. comand should be integer enter, 1 for add, 2 for run, 3 for exit.
+6. After stimulate user type anything to quit.

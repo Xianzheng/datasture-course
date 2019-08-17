@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "readfile.h"
+
+int sort(const void* a, const void *b)
+{
+  const struct readfile *ia = (struct readfile *)a;
+  const struct readfile *ib = (struct readfile *)b;
+  return ia->pri-ib->pri;
+}
+
+
+int read(char *filename, Read *info)
+{
+  //Read *input=malloc(sizeof(Read)*100);
+  /*printf("1. Add the new patient from the command line\n");
+  printf("2. processing the simulation\n");
+  printf("3. Exis the program\n");
+  printf("After process the simulation, type anything will exit");*/
+
+  FILE *fp=fopen(filename,"r");
+
+  int i=0;
+  //int z=0,option=0;
+  if(fp==NULL){
+    printf("error by opening\n");
+    exit(1);
+  }
+
+  while(fscanf(fp,"%s %d %s\n",(info+i)->id,&(info+i)->pri,(info+i)->tom)!=EOF){
+    i++;
+  }
+  /*
+  while(1){
+  printf("type your command\n");
+  scanf("%d",&option);
+    if(option==1){
+    printf("Enter patientid   priority(num)  symptom(CV NH EC GI MH..)\n");
+    scanf("%s %d %s",(info+i+z)->id, &(info+i+z)->pri, (info+i+z)->tom);
+    z++;
+    }
+    if(option==2){
+      break;
+    }
+    if(option==3){
+      exit(1);
+    }
+  }*/
+
+  qsort(info, i, sizeof(Read), &sort);
+
+  return i;
+}

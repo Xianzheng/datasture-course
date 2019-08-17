@@ -1,0 +1,14 @@
+Student Information:
+Xianzheng Fang
+0847616
+
+Program description
+Using the LinkedList to stimulate a traffic light
+
+Additional program detail:
+
+1. use double link list and use the LinkedListAPI.h giving by proffessor;
+2. In this double linkedlist, the head is NULL, which means list->head is always NULL
+3. Look like NULL->NEXT->NEXT->NEXT which is easier to manipulate;
+4. I make a struct readfile to read into info array first, and use qsort to sort it
+5. when a car remove, I delete note from list, like a queue, first in first out.

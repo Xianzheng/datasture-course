@@ -1,0 +1,15 @@
+Student Information:
+Xianzheng Fang
+0847616
+
+Program description
+This program is use BinarySearchTreeAPI to build a Interface
+It will read a file and upload the information from file to program
+Information include keywords and sentences, people can add rule
+delete rule, discuss with it.
+
+Additional program detail:
+
+1. It implements function from BinarySearchTreeAPI;
+2. It adds some funtion to it in order to use recursive
+3. Testmain was conduct but it needs to upload file

@@ -1,0 +1,14 @@
+Student Information:
+Xianzheng Fang
+0847616
+
+Program description
+This assignment use HashTableAPI to build HashTable.
+And use hashtable to store data and found data.
+
+Additional program detail:
+
+1. The dictionary is read into to the program.
+2. User can use the words from dictionary to check whether userfile is correct or not
+3. Beside dictionary, user can add data, and delete data by key
+4. Finally, use destroyTable to free all the space using in the program.
